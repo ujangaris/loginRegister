@@ -56,3 +56,35 @@
 
             dan itu artinya function Register kita berjalan dengan baik.
 
+
+5. Login 
+    pengujian menggunakan file  request.rest
+        buat lagi baris code POST :
+        ### <- ini digunakan untuk memisahkan antar request
+        POST http://localhost:5000/login
+        Content-Type: application/json
+
+        {
+            "email": "ujangaja@gmail.com",
+            "password": "123456"
+        }
+
+        maka output response akan menampilkan:
+
+            {
+                "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBBcmlzYW5kaSIsImVtYWlsIjoidWphbmdhamFAZ21haWwuY29tIiwiaWF0IjoxNjM2MTE2MTYyLCJleHAiOjE2MzYxMTYxODJ9.0FT7CzUkd10pMV7S0FFtWMdRg14zywLF_LCgRQw8GCw"
+            }
+        
+        jika kita uji dengan password yang salah, maka akan tampil:
+
+        {
+            "msg": "Wrong Password"
+        }
+
+
+        jika kita uji dengan email yang salah, maka akan tampil:
+        {
+            "msg": "Email tidak ditemukan"
+        }
+
+        dan itu artinya function Login kita berjalan dengan baik.

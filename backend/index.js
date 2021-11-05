@@ -1,7 +1,9 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import db from './config/Database.js';
 // import Users from './models/UserModel.js';// ini dinyalakn jika pertama kali mau buat table user
 import router from './routes/index.js';
+dotenv.config();
 const app = express();
 
 try {
