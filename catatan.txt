@@ -81,10 +81,13 @@
             "msg": "Wrong Password"
         }
 
+6. Middleware
+    
+    pengujian dengan postman:
+        login terlebih dahulu, lalu ambil token(token ini punya durasi waktu 15detik)
+        pada get user tambahkan Authorization dan Bearer lalu sepasi lalu token, seperti dibawah ini:
 
-        jika kita uji dengan email yang salah, maka akan tampil:
-        {
-            "msg": "Email tidak ditemukan"
-        }
+        GET http://localhost:5000/users
+        Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBBcmlzYW5kaSIsImVtYWlsIjoidWphbmdhamFAZ21haWwuY29tIiwiaWF0IjoxNjM2MTE4OTIyLCJleHAiOjE2MzYxMTg5NDJ9.iGMk1cdzLgNPqLR8hQ4YFZYpkifRD3UOMqRRZsIt1V8
 
-        dan itu artinya function Login kita berjalan dengan baik.
+        jika success maka akan menampilkan user yang login, jika gagal mungkin karna durasi waktu yang habis atau memang gagal.
