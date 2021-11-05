@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 import db from './config/Database.js';
 // import Users from './models/UserModel.js';// ini dinyalakn jika pertama kali mau buat table user
 import router from './routes/index.js';
@@ -14,6 +15,7 @@ try {
   console.error(error);
 }
 
+app.use(cookieParser());
 app.use(express.json());
 app.use(router);
 

@@ -108,3 +108,37 @@
                 "email": "ujangaja@gmail.com"
             }
         ]
+
+7. Refresh Token
+    pengujian dengan postman:
+        login dan tunggu sampai masa life time tokennya habis(15detik)
+        GET http://localhost:5000/users
+            Authorization: Bearer <token>
+        
+        kemudian send request pada http request token:
+
+        ###
+        GET http://localhost:5000/token
+
+        selanjutnya akan keluar tokennya, lalu copas get all user
+
+        GET http://localhost:5000/users
+            Authorization: Bearer <token>
+
+        jika output response menampilkan seperti dibawah:
+
+        [
+            {
+                "id": 1,
+                "name": "Ujang Arisandi",
+                "email": "ujangaja@gmail.com"
+            }
+        ]
+
+        maka refresh token yang kita buat berhasil.
+
+
+
+        
+
+        
