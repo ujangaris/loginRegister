@@ -137,6 +137,23 @@
 
         maka refresh token yang kita buat berhasil.
 
+8. Logout
+    Pengujian dengan request.rest:
+        lakukan login, kemudian coba access refres token jika masih mendapatkan token baru, 
+        disini akan normal, 
+        nah sekarang coba kita lakukan logout:
+
+            ###
+            DELETE http://localhost:5000/logout
+        
+        kemudian setelah logout, coba kembali acces refresh token,
+        akan tampil output:
+            "Unauthorized"
+        
+        ini menandakan Logout yang kita buat berhasil.
+
+
+
 
 
         
