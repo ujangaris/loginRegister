@@ -152,6 +152,9 @@
         
         ini menandakan Logout yang kita buat berhasil.
 
+9. Cors (agar API yang kita buat dapat digunakan dari luar domain)
+    
+    sampai sini Backend yang kita buat sudah selesai, lanjut ke FrontEnd.
 
 
 
