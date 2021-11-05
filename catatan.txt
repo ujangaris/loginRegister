@@ -6,3 +6,7 @@
     
     jalankan server dengan perintah:
         nodemon index(nama index karna kita menamai servernya dengan index, kalau server kita bisa ketiakan 'nodemon server')
+4. install extention restclient pada vscode agar dpt melakukan pengujian dengan file reequest.rest
+    lakukan pengujian dengan Send Request endpoint yang kita buat pada file reequest.res:
+        GET http://localhost:5000/users
+     jika hasil output adalah array kosong [] maka api yang kita buat success. 
