@@ -1,0 +1,8 @@
+1. masuk kericetory backand, lalu 'npm init -y'
+2. install dependencies yang dibutuhkan :
+    npm install express mysql2 sequelize jsonwebtoken dotenv bcrypt cookie-parser cors
+3.setup server dan install nodemon secara global
+    npm install -g nodemon
+    
+    jalankan server dengan perintah:
+        nodemon index(nama index karna kita menamai servernya dengan index, kalau server kita bisa ketiakan 'nodemon server')
