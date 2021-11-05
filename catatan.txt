@@ -91,3 +91,20 @@
         Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBBcmlzYW5kaSIsImVtYWlsIjoidWphbmdhamFAZ21haWwuY29tIiwiaWF0IjoxNjM2MTE4OTIyLCJleHAiOjE2MzYxMTg5NDJ9.iGMk1cdzLgNPqLR8hQ4YFZYpkifRD3UOMqRRZsIt1V8
 
         jika success maka akan menampilkan user yang login, jika gagal mungkin karna durasi waktu yang habis atau memang gagal.
+
+    Membuat agar password dan request tokennya tidak tanpil, lakukan pengujian dengan postman
+        login terlebih dahulu, lalu ambil token(token ini punya durasi waktu 15detik)
+        pada get user tambahkan Authorization dan Bearer lalu sepasi lalu token, seperti dibawah ini:
+
+        GET http://localhost:5000/users
+        Authorization: Bearer <token>
+
+        jika success maka akan menampilkan user yang login, namun kali ini hasil output dari respone hanya akan menampilkan id,name, dan email.
+
+        [
+            {
+                "id": 1,
+                "name": "Ujang Arisandi",
+                "email": "ujangaja@gmail.com"
+            }
+        ]
