@@ -10,3 +10,49 @@
     lakukan pengujian dengan Send Request endpoint yang kita buat pada file reequest.res:
         GET http://localhost:5000/users
      jika hasil output adalah array kosong [] maka api yang kita buat success. 
+5. Create data
+    pengujian menggunakan file  request.rest
+        kali ini buat baris code POST :
+        ### <- ini digunakan untuk memisahkan antar request
+        POST http://localhost:5000/users
+        Content-Type: application/json
+
+        {
+            "name": "Ujang Arisandi",
+            "email": "ujangaja@gmail.com",
+            "password": "123456",
+            "confPassword": "123456"
+        }
+
+        jika berhasil akan ada outut response:
+        {
+            "msg": "Register Berhasil"
+        }
+
+        untuk lebih memastikan ,send request data get all users:
+        
+            GET http://localhost:5000/users
+
+            maka output response akan menampilkan data yang td kita create:
+
+            [
+                {
+                    "id": 1,
+                    "name": "Ujang Arisandi",
+                    "email": "ujangaja@gmail.com",
+                    "password": "$2b$10$uLMrPLx57g20dur2KSS2MeJOD51bm31EWMozzF5OBaltiHXY380ya",
+                    "refresh_token": null,
+                    "createdAt": "2021-11-05T11:18:35.000Z",
+                    "updatedAt": "2021-11-05T11:18:35.000Z"
+                }
+            ]
+
+            jika kita coba create data kembali namun password dan confPassword tidak sama , 
+            maka output akan menampilkan message berikut:
+
+                {
+                    "msg": "Password dan Confirm Password tidak cocok"
+                }
+
+            dan itu artinya function Register kita berjalan dengan baik.
+
