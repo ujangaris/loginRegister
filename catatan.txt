@@ -156,6 +156,10 @@
     
     sampai sini Backend yang kita buat sudah selesai, lanjut ke FrontEnd.
 
+10. FrontEnd    
+    install reactJs:
+        npx create-react-app frontend
+
 
 
 
