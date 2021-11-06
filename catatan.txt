@@ -164,6 +164,7 @@
 
         untuk memastikan apliaksi react kita berjalan dengan baik, jalankan npm start
 13. setup react sesuai kebutuhan
+14. Component Login
 
 
 
