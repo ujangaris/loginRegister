@@ -159,7 +159,10 @@
 10. FrontEnd    
     install reactJs:
         npx create-react-app frontend
+12. installasi yang dibutuhkan untuk react
+        npm install react-router-dom axios bulma jwt-decode
 
+        untuk memastikan apliaksi react kita berjalan dengan baik, jalankan npm start
 
 
 
