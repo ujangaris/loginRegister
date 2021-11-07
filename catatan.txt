@@ -172,6 +172,8 @@
         untuk dapat menjalankan functionnya jangan lupa menjalankan server backend-nya!
 18. Funtion Login
         copy paste function register lalu modifikasi
+19. Menampilkan Nama User Yang Login Pada Halaman Dashbord
+
 
         
 
