@@ -165,10 +165,13 @@
         untuk memastikan apliaksi react kita berjalan dengan baik, jalankan npm start
 13. setup react sesuai kebutuhan
 14. Component Login
-15. Component Login
+15. Component Register
     copy isi file Login lalu modifikasi.
 16. Component Dashboard dan Navbar
-
+17. Function Register
+        untuk dapat menjalankan functionnya jangan lupa menjalankan server backend-nya!
+18. Funtion Login
+        copy paste function register lalu modifikasi
 
         
 
