@@ -175,6 +175,7 @@
 19. Menampilkan Nama User Yang Login Pada Halaman Dashbord
 20. lifetime token
 21. Logout
+22. menampikan semua data dari database ke dalam table
 
 
         
