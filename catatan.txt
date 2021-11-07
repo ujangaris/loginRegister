@@ -173,6 +173,7 @@
 18. Funtion Login
         copy paste function register lalu modifikasi
 19. Menampilkan Nama User Yang Login Pada Halaman Dashbord
+20. lifetime token
 
 
         
